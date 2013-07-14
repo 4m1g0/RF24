@@ -114,7 +114,7 @@ void loop(void)
     char c = toupper(Serial.read());
     if ( c == 'T')
     {
-      printf("Trying to transmit to %u...\n\r", pipes[1]);
+      printf("Trying to transmit to %X...\n\r", pipes[1]);
 
       // Transmitimos hacia la direccion privada de la otra maquina
       radio.openWritingPipe(pipes[1]);

@@ -123,7 +123,7 @@ void loop(void)
       radio.stopListening();
       
       // Enviamos nuestro nombre de maquina
-      bool ok = radio.write(name, sizeof(char*) * 10 );
+      bool ok = radio.write(name, sizeof(char) * 10 );
       
       if (ok)
         printf("ok...\n\r");
